@@ -28,10 +28,10 @@ super + shift + s
 
 # pywal
 super + w
-	exec wal -i $HOME/arch-dotfiles/wallpapers/
+	exec wal -i $HOME/.wallpapers/
 
 super + shift + w
-	exec wal -i $HOME/arch-dotfiles/wallpapers/wtf/
+	exec wal -i $HOME/.wallpapers/wtf/
 
 super + shift + p
 	exec reload-pywal.sh
