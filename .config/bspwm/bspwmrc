@@ -28,10 +28,9 @@ bspc config focus_follows_pointer true
 
 #AutoStart applications
 
-picom &
-$HOME/.config/polybar/launch.sh &
-wal -R
-dunst &
-polybar &
 xinput set-prop 13 "libinput Tapping Enabled" 1 &
 xinput set-prop 13 "libinput Natural Scrolling Enabled" 1 &
+picom &
+dunst &
+wal -R 
+polybar

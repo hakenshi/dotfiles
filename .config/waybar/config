@@ -3,10 +3,10 @@
     "position": "bottom",
     "height": 43,
     "modules-left": [
-        "custom/launcher"
+        "custom/launcher","hyprland/workspaces"
     ],
     "modules-center": [
-        "hyprland/workspaces"
+        "custom/spotify", "cava"
     ],
     "modules-right": [
         "tray",
@@ -113,9 +113,9 @@
             "warning": 30,
             "critical": 20
         },
-        "format": "{icon} {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
         "format-icons": [
             "",
@@ -171,7 +171,7 @@
         "on-click": "blueberry"
     },
     "cava": {
-        "cava_config": "$HOME/.config/cava/config",
+        "cava_config": "/home/lonely/.config/cava/config",
         "framerate": 30,
         "autosens": 1,
         "sensitivity": 100,
@@ -200,5 +200,13 @@
         "actions": {
             "on-click-right": "mode"
         }
-    }
+    },
+    "custom/spotify": {
+    "exec": "/usr/bin/python3 /home/lonely/.config/waybar/scripts/mediaplayer.py --player spotify",
+    "format": "{}  ",
+    "return-type": "json",
+    "on-click": "playerctl play-pause",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous"
+}
 }
