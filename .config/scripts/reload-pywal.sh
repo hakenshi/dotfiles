@@ -16,15 +16,7 @@ echo "reloading spicetify colors..."
 
 cd "$HOME/.config/spicetify/Themes/"
 
-spicetify config current_theme Blossom
+spicetify config current_theme Default
 spicetify apply
 
 echo "spicetify theme reloaded"
-
-echo "reloading discord theme..."
-pywal-discord -t default
-
-echo "discord theme reloaded"
-
-echo "exiting"
-cd "$OLDPWD"

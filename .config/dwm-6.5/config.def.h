@@ -1,13 +1,21 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int borderpx  = 0;        /* border pixel of windows */
+static const unsigned int gappx     = 6;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=10" };
 static const char dmenufont[]       = "monospace:size=10";
 #include "/home/lonely/.cache/wal/colors-wal-dwm.h"
+
+static const char *const autostart[] = {
+	"picom", NULL,
+	"wal", "-R", NULL,
+	"dunst", NULL,
+	NULL /* terminate */
+};
 
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
@@ -25,7 +33,7 @@ static const Rule rules[] = {
 /* layout(s) */
 static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
-static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
+static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
 static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen window */
 
 #include "fibonacci.c"
@@ -57,6 +65,12 @@ static const char *termcmd[]  = { "kitty", NULL };
 static const char *browsercmd[] = {"firefox-developer-edition", NULL};
 static const char *texteditorcmd[] = {"code", NULL};
 static const char *spotifycmd[] = {"com.spotify.Client", NULL};
+#include <X11/XF86keysym.h>
+static const char *upvol[]      = { "/usr/bin/wpctl",   "set-volume", "@DEFAULT_AUDIO_SINK@",      "5%+",      NULL };
+static const char *downvol[]    = { "/usr/bin/wpctl",   "set-volume", "@DEFAULT_AUDIO_SINK@",      "5%-",      NULL };
+static const char *mutevol[]    = { "/usr/bin/wpctl",   "set-mute",   "@DEFAULT_AUDIO_SINK@",      "toggle",   NULL };
+static const char *light_up[]   = { "/usr/bin/light",   "-A", "5", NULL };
+static const char *light_down[] = { "/usr/bin/light",   "-U", "5", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -65,6 +79,11 @@ static const Key keys[] = {
 	{ MODKEY,             			XK_f, 	   spawn,          {.v = browsercmd } },
 	{ MODKEY,             			XK_c, 	   spawn,          {.v = texteditorcmd } },
 	{ MODKEY,             			XK_s, 	   spawn,          {.v = spotifycmd } },
+	{ MODKEY,                       XF86XK_AudioLowerVolume, spawn, {.v = downvol } },
+	{ MODKEY,                       XF86XK_AudioMute, 		spawn, {.v = mutevol } },
+	{ MODKEY,                       XF86XK_AudioRaiseVolume, spawn, {.v = upvol   } },
+	{ MODKEY,					   	XF86XK_MonBrightnessUp,	spawn,	{.v = light_up} },
+	{ MODKEY,					   	XF86XK_MonBrightnessDown,spawn,	{.v = light_down} },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },

@@ -8,8 +8,7 @@ super + Return
 
 # firefox
 super + f
-	firefox-developer-edition
-
+  exec zen-browser
 # visual studio code
 super + c
 	code
