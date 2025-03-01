@@ -1,0 +1,27 @@
+2024-03-07 19:41:36.704 [info] Started local extension host with pid 22904.
+2024-03-07 19:41:37.065 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-03-07 19:41:37.065 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-03-07 19:41:37.066 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-03-07 19:41:37.066 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-03-07 19:41:37.066 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-03-07 19:41:37.067 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-03-07 19:41:37.067 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-03-07 19:41:37.067 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-03-07 19:41:37.067 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-03-07 19:41:37.067 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-03-07 19:41:37.068 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-03-07 19:41:37.068 [warning] [cmake-tools]: Couldn't find message for key cmake-tools.configuration.cmake.options.advanced.statusBarLength.description.
+2024-03-07 19:41:37.412 [warning] [twxs.cmake]: Cannot register 'cmake.cmakePath'. This property is already registered.
+2024-03-07 19:41:37.522 [error] [AnbuselvanRocky.bootstrap5-vscode]: Unknown language in `contributes.bootstrap5-vscode.language`. Provided value: ejs
+2024-03-07 19:41:37.523 [error] [AnbuselvanRocky.bootstrap5-vscode]: Unknown language in `contributes.bootstrap5-vscode.language`. Provided value: latte
+2024-03-07 19:41:37.523 [error] [AnbuselvanRocky.bootstrap5-vscode]: Unknown language in `contributes.bootstrap5-vscode.language`. Provided value: tpl
+2024-03-07 19:41:37.523 [error] [AnbuselvanRocky.bootstrap5-vscode]: Unknown language in `contributes.bootstrap5-vscode.language`. Provided value: twig
+2024-03-07 19:41:37.523 [error] [AnbuselvanRocky.bootstrap5-vscode]: Unknown language in `contributes.bootstrap5-vscode.language`. Provided value: vue-html
+2024-03-07 19:41:37.523 [error] [AnbuselvanRocky.bootstrap5-vscode]: Unknown language in `contributes.bootstrap5-vscode.language`. Provided value: django-html
+2024-03-07 19:41:37.523 [error] [AnbuselvanRocky.bootstrap5-vscode]: Unknown language in `contributes.bootstrap5-vscode.language`. Provided value: jinja-html
+2024-03-07 19:41:37.523 [error] [AnbuselvanRocky.bootstrap5-vscode]: Unknown language in `contributes.bootstrap5-vscode.language`. Provided value: erb
+2024-03-07 19:41:37.524 [error] [AnbuselvanRocky.bootstrap5-vscode]: Unknown language in `contributes.bootstrap5-vscode.language`. Provided value: HTML (Eex)
+2024-03-07 19:41:37.524 [error] [AnbuselvanRocky.bootstrap5-vscode]: Unknown language in `contributes.bootstrap5-vscode.language`. Provided value: volt
+2024-03-07 19:41:37.524 [error] [AnbuselvanRocky.bootstrap5-vscode]: Unknown language in `contributes.bootstrap5-vscode.language`. Provided value: nunjucks
+2024-03-07 19:41:37.524 [error] [AnbuselvanRocky.bootstrap5-vscode]: Unknown language in `contributes.bootstrap5-vscode.language`. Provided value: njk
+2024-03-07 19:41:39.877 [info] [perf] Render performance baseline is 32ms
